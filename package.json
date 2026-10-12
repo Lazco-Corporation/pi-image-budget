@@ -1,0 +1,52 @@
+{
+  "name": "@lazco/pi-image-budget",
+  "version": "0.1.0",
+  "description": "Pi extension: keep old images from filling the provider request size limit",
+  "type": "module",
+  "license": "MIT",
+  "author": "OnCloud125252 <onc125252@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lazco-Corporation/pi-image-budget.git"
+  },
+  "homepage": "https://github.com/Lazco-Corporation/pi-image-budget#readme",
+  "bugs": {
+    "url": "https://github.com/Lazco-Corporation/pi-image-budget/issues"
+  },
+  "keywords": [
+    "pi",
+    "pi-extension",
+    "pi-package",
+    "coding-agent",
+    "images",
+    "context",
+    "request-size"
+  ],
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "1.0.4",
+    "@earendil-works/pi-coding-agent": "1.0.4",
+    "@types/node": "^22.20.1",
+    "typescript": "^5.9.2"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --test --experimental-strip-types test/*.test.ts"
+  }
+}
