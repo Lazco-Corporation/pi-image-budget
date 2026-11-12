@@ -1,0 +1,23 @@
+LICENSE
+  s_ca649ffe1d1c2b::t_42dfc89ce5be8c 1-663
+README.md
+  s_ca649ffe1d1c2b::t_9bb39c8a0662e4 189,193
+package.json
+  s_ca649ffe1d1c2b::t_2d3769f1144d16 6-7
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "aac568faa777eb2b7151ffe02ed985ace037517d",
+  "prompts": {},
+  "sessions": {
+    "s_ca649ffe1d1c2b": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a1cf03-d4d1-766c-8d3c-521b0afd62c3",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "OnCloud <onc125252@gmail.com>"
+    }
+  }
+}
