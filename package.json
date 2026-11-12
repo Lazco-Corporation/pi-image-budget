@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Pi extension: keep old images from filling the provider request size limit",
   "type": "module",
-  "license": "MIT",
-  "author": "OnCloud125252 <onc125252@gmail.com>",
+  "license": "AGPL-3.0-or-later",
+  "author": "Lazco Corporation (拉資科科技有限公司)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lazco-Corporation/pi-image-budget.git"

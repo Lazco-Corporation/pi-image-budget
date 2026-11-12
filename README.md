@@ -186,8 +186,8 @@ It runs one time for each failed request.
 
 To report a bug or ask a question, open an issue on [GitHub](https://github.com/Lazco-Corporation/pi-image-budget/issues).
 Pull requests are welcome.
-The build and test steps are in [CONTRIBUTING.md](CONTRIBUTING.md).
+The build, test, and release steps are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE)
+[AGPL-3.0-or-later](LICENSE)
