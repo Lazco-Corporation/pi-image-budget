@@ -3,7 +3,7 @@
 All releases of `@lazco/pi-image-budget` are in this file.
 The newest release is at the top.
 
-## [0.1.0] - 2026-10-13
+## [0.1.0] - 2026-11-12
 
 This is the first release.
 
