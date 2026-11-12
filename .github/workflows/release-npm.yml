@@ -14,7 +14,8 @@
 # by `scripts/changelog-notes.sh`, followed by the notes that GitHub generates.
 #
 # ── SHARED ACTIONS (ci-actions) ────────────────────────────────────────────
-# infisical-fetch and npm-publish come from Lazco-Corporation/ci-actions@v1.
+# require-tag-on-main, infisical-fetch, and npm-publish come from
+# Lazco-Corporation/ci-actions@v1.
 # Log and output format is defined there.
 #
 # ── CONFIG SOURCED FROM INFISICAL ──────────────────────────────────────────
