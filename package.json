@@ -1,6 +1,6 @@
 {
   "name": "@lazco/pi-image-budget",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pi extension: keep old images from filling the provider request size limit",
   "type": "module",
   "license": "AGPL-3.0-or-later",
