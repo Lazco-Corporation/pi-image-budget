@@ -6,7 +6,9 @@ Pi extension: keep old images from filling the provider request size limit.
 
 [![npm](https://img.shields.io/npm/v/@lazco/pi-image-budget)](https://www.npmjs.com/package/@lazco/pi-image-budget) [![License](https://img.shields.io/npm/l/@lazco/pi-image-budget)](LICENSE)
 
-[Installation](#installation) · [Usage](#usage) · [Settings](#settings) · [Ranking](#ranking) · [Summaries](#summaries) · [Limitations](#limitations)
+<img src="https://lazco-public-15298932ec.pub.t4.txg1.lazco.cloud/pi-image-budget/demo.gif" width="720" alt="In a pi session with many screenshots, the agent reads one more image. The notice says that the extension removed 11 old images and that 20 images stay, and the reply follows.">
+
+[Demo video](#demo-video) · [Installation](#installation) · [Usage](#usage) · [Settings](#settings) · [Ranking](#ranking) · [Summaries](#summaries) · [Limitations](#limitations)
 
 </div>
 
@@ -22,6 +24,13 @@ This extension replaces old images with a short text note, so that the session c
 - **Keeps the images that matter.** The newest image always stays. An optional [ranking model](#ranking) picks old images that the current task still needs.
 - **Describes an image before it goes.** An optional [summary model](#summaries) writes a short description into the note.
 - **Recovers from the error.** If the provider still refuses a request as too large, the extension removes old images and sends the request again. See [Recovery](#recovery-after-request-too-large).
+
+## Demo video
+
+The 60-second video shows the error without the extension, the install, the notice, the note in place of an image, `/image-budget`, and the settings.
+Click the image to play the video.
+
+<a href="https://lazco-public-15298932ec.pub.t4.txg1.lazco.cloud/pi-image-budget/Demo.mp4"><img src="https://lazco-public-15298932ec.pub.t4.txg1.lazco.cloud/pi-image-budget/demo-poster.png" width="720" alt="A frame of the demo video. A pi session shows the notice: removed 11 old images, 20 images stay. The reply of the agent follows."></a>
 
 ## Installation
 
@@ -48,11 +57,19 @@ When a request has more than 30 images, a notice shows how many images the exten
 Image budget: removed 11 old images (4.2 MB). 20 images (7.6 MB) stay.
 ```
 
+<img src="https://lazco-public-15298932ec.pub.t4.txg1.lazco.cloud/pi-image-budget/notice.png" width="720" alt="In pi, the agent reads a screenshot. The notice below the tool result says: Image budget: removed 11 old images (4.8 MB). 20 images (8.8 MB) stay.">
+
 In each removed place, the agent sees a note like this one:
 
 > [Image removed by pi-image-budget to keep the request below the provider size limit.
 > Source: the `read` tool, path "/tmp/uiux/t_small.png".
 > You cannot see this image now. If you need it, read the file again. If the file is gone, make the image again the same way as before.]
+
+<img src="https://lazco-public-15298932ec.pub.t4.txg1.lazco.cloud/pi-image-budget/note.png" width="720" alt="The note in the request to the model, in place of a read tool result. The source line and the line that says to read the file again are marked.">
+
+In the demo session, the provider gets 20 images instead of 31, and the request goes through:
+
+<img src="https://lazco-public-15298932ec.pub.t4.txg1.lazco.cloud/pi-image-budget/requests.png" width="720" alt="What the provider received. Without pi-image-budget: 31 images, 13.6 MB, 413 request_too_large. With pi-image-budget: 20 images, 8.8 MB, 200 OK.">
 
 The extension changes only the context that pi sends to the model.
 The session file keeps every image, and the pi UI still shows them.
