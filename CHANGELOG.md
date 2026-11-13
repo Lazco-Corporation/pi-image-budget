@@ -3,6 +3,13 @@
 All releases of `@lazco/pi-image-budget` are in this file.
 The newest release is at the top.
 
+## [0.1.1] - 2026-11-14
+
+### Docs
+
+- The README shows a demo GIF, a 60-second demo video, and screenshots of the notice, the note, and the request that the provider gets.
+- The pi package manifest has a demo video and an image.
+
 ## [0.1.0] - 2026-11-12
 
 This is the first release.
@@ -21,4 +28,5 @@ This is the first release.
   `/image-budget reload` reads the settings again, and `/image-budget path` shows the settings file path.
 - The settings file `~/.pi/agent/image-budget.json` sets the limits, the replacement, the ranking, the summaries, and the recovery.
 
+[0.1.1]: https://github.com/Lazco-Corporation/pi-image-budget/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/Lazco-Corporation/pi-image-budget/releases/tag/v0.1.0
