@@ -1,0 +1,30 @@
+README.md
+  s_c2c2508b6a48e6::t_52148a8119dc71 9-11,28-34,60-61,68-72
+  s_64c3972662d614::t_0737f24f6a2e31 73
+package.json
+  s_c2c2508b6a48e6::t_79dfcba46b9f2b 36-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c04c97a964ea60137bc7102150a8400495ddbb3a",
+  "prompts": {},
+  "sessions": {
+    "s_64c3972662d614": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a1d571-1ab8-7195-8841-5dcd0a4708a1",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "OnCloud <onc125252@gmail.com>"
+    },
+    "s_c2c2508b6a48e6": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a1d1ab-4e64-7110-b033-2dde0c5bee31",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "OnCloud <onc125252@gmail.com>"
+    }
+  }
+}
